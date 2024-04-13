@@ -1,0 +1,90 @@
+body {
+  background-color: #f8e9dd;
+  font-family: "DM Sans", sans-serif;
+}
+body .header {
+  background-color: #ec775f;
+  color: #fffaf5;
+}
+body .header__title {
+  font-weight: 400;
+  color: #f8e9dd;
+}
+body .header__value {
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+body .chart {
+  background-color: #fffaf5;
+}
+body .chart__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #382314;
+}
+body .chart__day {
+  color: #93867b;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+body .chart hr {
+  border: 1px solid #f8e9dd;
+}
+body .chart__total-numbers {
+  grid-template-rows: 42% 42%;
+}
+body .chart__total-text {
+  color: #93867b;
+}
+body .chart__total-value {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #382314;
+}
+body .chart__total-percentage {
+  color: #382314;
+  font-weight: 800;
+}
+body .chart__last-month {
+  color: #93867b;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    align-items: center;
+  }
+  body .header__title {
+    font-size: 1.25rem;
+    color: #f8e9dd;
+  }
+  body .header__value {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  body .chart__title {
+    font-size: 2.1rem;
+  }
+  body .chart hr {
+    margin: 2.2rem 0;
+  }
+  body .chart__total-numbers {
+    grid-template-rows: 33% 33%;
+  }
+  body .chart__total-text {
+    font-size: 1.1rem;
+  }
+  body .chart__total-value {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  body .chart__total-percentage {
+    font-size: 1.25rem;
+  }
+  body .chart__last-month {
+    color: #93867b;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=style.css.map */

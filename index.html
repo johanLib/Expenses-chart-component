@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Weekly Expenses Chart">
+  <link rel="icon" type="image/svg" sizes="32x32" href="./images/favicon-32x32.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Expenses chart component</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Anass Seghir">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Sass, SEO, Accessibility, frontend, Frontend Mentor">
+  <meta http-equiv="Content-Type" content="text/html">
+</head>
+<body class="min-h-screen flex flex-col justify-center m-4 gap-4 sm:gap-6">
+
+  <header class="header flex justify-between items-center rounded-lg p-5 sm:rounded-3xl sm:py-6 sm:px-8 sm:min-w-[540px]">
+    <div class="header__text">
+      <h1 class="header__title">My balance</h1>
+      <strong class="header__value">$921.48</strong>
+    </div>
+    <img src="images/logo.svg" alt="logo" class="w-[60px] sm: w-[75px]">
+  </header>
+
+  <main class="chart p-5 rounded-lg sm:rounded-3xl sm:px-9 sm:py-7 sm:min-w-[540px]">
+    <h2 class="chart__title">Spending - Last 7 days</h2>
+    <canvas class="chart__chart mt-5 sm:mt-0 sm:pt-9" height="150">
+
+    </canvas>
+
+    <hr class="my-4">
+
+    <span class="chart__total-text">Total this month</span>
+    <div class="chart__total-numbers grid grid-cols-2 items-center mt-1">
+      <span class="chart__total-value row-start-1 row-end-3">$478.33</span>
+      <span class="chart__total-percentage justify-self-end">+2.4%</span>
+      <span class="chart__last-month col-start-2 justify-self-end">from last month</span>    
+    </div>
+  </main>
+  
+</body>
+</html>
